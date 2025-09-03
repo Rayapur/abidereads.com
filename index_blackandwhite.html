@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adrianna's Highlights</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #ffffff;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5em;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2em;
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        p {
+            font-size: 1em;
+            margin-bottom: 30px;
+            line-height: 1.5;
+            max-width: 400px;
+        }
+        .button-container {
+            width: 100%;
+            max-width: 350px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+        .button {
+            display: block;
+            padding: 15px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1em;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .button:hover {
+            background-color: #555;
+        }
+        .social-icons {
+            display: flex;
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        .social-icon {
+            font-size: 1.5em;
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .social-icon:hover {
+            color: #888;
+        }
+        .profile-image {
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 40px; /* Added margin below the image */
+        }
+        .app-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 100%;
+            max-width: 250px; /* Adjusted max-width for app buttons */
+            margin-bottom: 40px;
+        }
+        .app-button {
+            display: block;
+            background-color: #000; /* Black for app store buttons */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px; /* Slightly more rounded for app buttons */
+            padding: 12px 15px;
+            font-size: 1em;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .app-button:hover {
+            background-color: #444;
+        }
+        .app-button i {
+            font-size: 1.3em;
+        }
+
+        /* FontAwesome for social icons and app store icons */
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+    </style>
+</head>
+<body>
+    <h1>Hello,</h1>
+    <h2>Welcome to Abide Reads</h2>
+    <h4>AbideReads is your dedicated mobile app for Christian literature. It's a sanctuary for stories that inspire, encourage, and deepen your faith, bringing timeless and new Christian books directly to you. Dive into a library designed to uplift your spirit and connect you with powerful narratives.</h4>
+
+    <div class="button-container">
+        <a href="/privacy.html" class="button">Privacy Policy</a>
+        <a href="/terms.html" class="button">Terms of Use</a>
+    </div>
+
+    <div class="social-icons">
+        <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
+    </div>
+
+    <img src="./images/abidereads.png" alt="AbideReads logo" class="profile-image">
+
+    <p>Get the AbideReads app now!</p>
+    <div class="app-buttons">
+        <a href="YOUR_APP_STORE_LINK_HERE" target="_blank" class="app-button">
+            <i class="fab fa-apple"></i> App Store
+        </a>
+        <a href="YOUR_GOOGLE_PLAY_LINK_HERE" target="_blank" class="app-button">
+            <i class="fab fa-google-play"></i> Google Play
+        </a>
+    </div>
+
+</body>
+</html>

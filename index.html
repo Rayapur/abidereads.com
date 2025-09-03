@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abide Reads</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* A glass theme uses a background image with a blurred overlay on content. */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 20px;
+            color: #fff; /* Changed text color to white for contrast */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            
+            /* Background image with a slight blur */
+            background-image: url('./images/glass-background-hills.png'); /* Replace with your background image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Keeps the background in place on scroll */
+        }
+        
+        /* The main "glass" container for all content */
+        .glass-container {
+            backdrop-filter: blur(10px) saturate(180%);
+            -webkit-backdrop-filter: blur(10px) saturate(180%);
+            background-color: rgba(255, 255, 255, 0.15); /* Semi-transparent white */
+            border: 1px solid rgba(255, 255, 255, 0.2); /* Light border */
+            border-radius: 20px;
+            padding: 40px 20px;
+            max-width: 500px;
+            width: 90%;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5em;
+            margin-bottom: 5px;
+            color: #fff; /* Adjusted color for glass theme */
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Text shadow for pop */
+        }
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2em;
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: #fff;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        p {
+            font-size: 1em;
+            margin-bottom: 30px;
+            line-height: 1.5;
+            max-width: 400px;
+            color: #e0e0e0; /* Lighter text color for readability */
+            text-align: center;
+        }
+        .button-container {
+            width: 100%;
+            max-width: 350px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+        .button {
+            display: block;
+            padding: 15px 20px;
+            background-color: rgba(0, 0, 0, 0.3); /* Transparent dark background */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1em;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            border: 1px solid rgba(255, 255, 255, 0.2); /* Added light border */
+        }
+        .button:hover {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .social-icons {
+            display: flex;
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        .social-icon {
+            font-size: 1.5em;
+            color: #fff; /* White icons */
+            text-decoration: none;
+            transition: color 0.3s ease;
+            text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        }
+        .social-icon:hover {
+            color: #ccc;
+        }
+        .profile-image {
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+        .app-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 100%;
+            max-width: 250px;
+            margin-bottom: 40px;
+        }
+        .app-button {
+            display: block;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            padding: 12px 15px;
+            font-size: 1em;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .app-button:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        .app-button i {
+            font-size: 1.3em;
+        }
+        /* FontAwesome for social icons and app store icons */
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+    </style>
+</head>
+<body>
+    <div class="glass-container">
+        <h1>Hello,</h1>
+        <h2>Welcome to Abide Reads</h2>
+        <h4>AbideReads is your dedicated mobile app for Christian literature. It's a sanctuary for stories that inspire, encourage, and deepen your faith, bringing timeless and new Christian books directly to you. Dive into a library designed to uplift your spirit and connect you with powerful narratives.</h4>
+        <h2>App is comming soon ..</h2>
+
+<!--         
+        <div class="button-container">
+            <a href="/privacy.html" class="button">Privacy Policy</a>
+            <a href="/terms.html" class="button">Terms of Use</a>
+        </div>
+
+        <div class="social-icons">
+            <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
+        </div>
+
+        <img src="./images/abidereads.png" alt="AbideReads logo" class="profile-image">
+
+        <p>Get the AbideReads app now!</p>
+        <div class="app-buttons">
+            <a href="YOUR_APP_STORE_LINK_HERE" target="_blank" class="app-button">
+                <i class="fab fa-apple"></i> App Store
+            </a>
+            <a href="YOUR_GOOGLE_PLAY_LINK_HERE" target="_blank" class="app-button">
+                <i class="fab fa-google-play"></i> Google Play
+            </a>
+        </div>
+    </div> -->
+</body>
+</html>
